@@ -11,7 +11,6 @@ class Products extends Component {
     componentDidMount() {
         fetchProduct(URL)
             .then((result) => {
-                console.log(result)
                 this.setState({
                     products: result,
                 });
@@ -33,6 +32,7 @@ class Products extends Component {
                             key={item.id}
                             imgURL={item.imgURL}
                             unit={item.unit}
+                            id={item.id}
                         ></Product>
                     ))}
             </div>

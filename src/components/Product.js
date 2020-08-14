@@ -7,7 +7,8 @@ class Product extends Component {
         const product = {
             name: this.props.name,
             price: this.props.price,
-            unit: this.props.unit
+            unit: this.props.unit,
+            id: this.props.id
         }
         addToOrder(product);
     }
