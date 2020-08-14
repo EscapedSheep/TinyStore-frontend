@@ -1,0 +1,11 @@
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.productBottom{
+    width: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
