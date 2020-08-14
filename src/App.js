@@ -1,12 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Link} from 'react-router-dom';
+import {Route, Switch} from "react-router";
 import Products from './components/Products';
 
 function App() {
   return (
     <div className="App">
-      <Products/>
+        <Router>
+            <ul>
+                <li>
+                    <Link to="/products">商城</Link>
+                </li>
+            </ul>
+            <Switch>
+            <Route exact path="/products" component={Products}></Route>
+            </Switch>
+        </Router>
     </div>
   );
 }

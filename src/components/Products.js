@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import fetchData from "./fetchData";
+import fetchProduct from "./fetchData";
 import Product from "./Product";
 import '../style/Products.css'
 
@@ -9,7 +9,7 @@ class Products extends Component {
     }
 
     componentDidMount() {
-        fetchData(URL)
+        fetchProduct(URL)
             .then((result) => {
                 console.log(result)
                 this.setState({

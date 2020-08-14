@@ -1,4 +1,4 @@
-export default function fetchData() {
+export default function fetchProduct() {
     const url = 'http://localhost:8080/product';
     return fetch(url)
         .then((response) => {
@@ -8,3 +8,4 @@ export default function fetchData() {
             return error;
         });
 }
+
